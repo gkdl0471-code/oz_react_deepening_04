@@ -23,7 +23,7 @@ export default function Home() {
     return (
         <main className="container">
             <h1>카드 렌더링</h1>
-            <Filter categories={CATEGORIES} currentFilter={filterCategory} onFilterChange={setFilterCategory} />
+            <Filter categories={CATEGORIES} currentCategory={filterCategory} onFilterChange={setFilterCategory} />
             <CardList data={filteredData} />
         </main>
     );
